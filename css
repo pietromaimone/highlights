@@ -76,5 +76,133 @@ body {
             width: 90%;  
         }
     }
-      
+
+
+novo css do site 
+
+
+ body {
+  font-family: 'Arial', sans-serif, 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Um tom de fundo mais escuro */
+  color: #e0e0e0; /* Texto em cinza claro para contraste */
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #333; /* Cor mais suave para o fundo */
+  color: #fcfcfc;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #444; /* Adiciona uma linha de separação */
+}
+
+.cabecalho h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px; /* Espaçamento entre as letras para um toque moderno */
+}
+
+/* Seção de detalhes */
+.detalhes {
+  padding: 20px;
+  margin: 20px;
+  background-color: #1f1f1f; /* Cor de fundo mais suave */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+  text-align: center;
+  color: #ddd; /* Cor de texto mais clara */
+  font-size: 1.1rem; /* Aumenta um pouco o tamanho da fonte */
+  line-height: 1.8; /* Melhor legibilidade */
+}
+
+/* Conteúdo com vídeos */
+.conteudo {
+  padding: 20px;
+  margin: 20px;
+  background-color: #1d1d1d; /* Fundo escuro para destacar os vídeos */
+  border: 1px solid #444; /* Bordas escuras */
+  border-radius: 8px; /* Bordas arredondadas */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: row;
+  flex-direction: column /* Espaçamento entre os vídeos */
+
+}
+
+
+section {
+
+  flex: 1 1 300px; /* Torna os vídeos flexíveis e ajustáveis */
+  margin: 10px;
+}
+
+iframe {
+  border-radius: 8px; /* Bordas arredondadas nos vídeos */
+  transition: transform 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+iframe:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Menu - caso haja um */
+.menu {
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  transition: color 0.3s ease; background-color: 0.3s ease;
+  border-radius: 4px;
+}
+
+.menu a:hover {
+  color: #ff6347;
+  background-color: #444; /* Cor vibrante ao passar o mouse */
+}
+
+/* Responsividade - Ajustes para telas pequenas */
+@media (max-width: 768px) {
+  iframe {
+      width: 90%;  
+  }
+  .conteudo {
+    flex-direction: column; /* Muda para coluna em telas menores */
+    align-items: center; /* Centraliza os vídeos */
+  }
+
+  .cabecalho h1 {
+      font-size: 2rem;
+  }
+
+  .detalhes {
+      font-size: 1rem;
+  }
+}
    
