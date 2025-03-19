@@ -1,85 +1,8 @@
-h1 {
-    color: #fcfcfc;
-    text-align: center;
-  }
-  
-  p {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    color: #333;  
-    }
-    
-    .cabecalho {
-        background-color: #242424;
-        color: #ffffff;
-        padding: 20px;
-        text-align: center;
-        }
-    
-    
-    .conteudo {
-    padding: 20px;
-    margin: 20px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    }
-
-    
-   
-    .detalhes {
-    padding: 10px;
-    margin: 20px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid #99c;
-    border-radius: 4px;
-    text-align: center;
-    }
-    
-    .rodape {
-        text-align: center;
-        margin-top: 40px;
-        font-size: 0.9rem;
-        color: #777;
-    }
-
-    .menu {
-        background-color: #333;
-      }
-      
-      .menu ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-      }
-      
-      .menu li {
-        margin: 0 15px;
-      }
-      
-      .menu a {
-        color: #fff;
-        text-decoration: none;
-        padding: 10px 0;
-        display: block;
-      }
-
-@media (max-width: 768px) {
-        iframe {
-            width: 90%;  
-        }
-    }
-
-
-novo css do site 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
  body {
   font-family: 'Arial', sans-serif, 'Helvetica Neue', sans-serif;
@@ -97,6 +20,7 @@ novo css do site
   text-align: center;
   border-bottom: 3px solid #444; /* Adiciona uma linha de separação */
 }
+
 
 .cabecalho h1 {
   font-size: 2.5rem;
@@ -133,7 +57,6 @@ novo css do site
 
 
 section {
-
   flex: 1 1 300px; /* Torna os vídeos flexíveis e ajustáveis */
   margin: 10px;
 }
@@ -150,41 +73,41 @@ iframe:hover {
 /* Rodapé */
 .rodape {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 1rem;
   color: #777;
+  
 }
 
-/* Menu - caso haja um */
+/* Menu */
 .menu {
-  background-color: #333;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  background-color: #222;
+  padding: 10px 0;
 }
 
 .menu ul {
-  list-style: none;
   display: flex;
   justify-content: center;
+  list-style-type: none;
 }
 
-.menu li {
+.menu ul li {
   margin: 0 15px;
 }
 
-.menu a {
+.menu ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 10px 0;
-  display: block;
-  transition: color 0.3s ease; background-color: 0.3s ease;
-  border-radius: 4px;
+  font-size: 1.1rem;
+}
+
+.menu ul li a:hover {
+  color: #ff5f5f;
 }
 
 .menu a:hover {
   color: #ff6347;
-  background-color: #444; /* Cor vibrante ao passar o mouse */
+ 
 }
 
 /* Responsividade - Ajustes para telas pequenas */
@@ -205,4 +128,4 @@ iframe:hover {
       font-size: 1rem;
   }
 }
-   
+
